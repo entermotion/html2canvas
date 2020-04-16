@@ -1,6 +1,9 @@
 const testRangeBounds = (document: Document) => {
     const TEST_HEIGHT = 123;
-
+    /**
+     * Fixes bug on Safari where <br /> elements collapse words over each other
+     */
+    return false;
     if (document.createRange) {
         const range = document.createRange();
         if (range.getBoundingClientRect) {
